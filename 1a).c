@@ -14,17 +14,17 @@ int i=0;
 while(i<m){
 
 if(ip[i] == '0'){
-	state=state+1;
-	count=count+1;
+	state++;
+	count++;
 }	
 else if(ip[i] == '1'){
 	if(state==0){
 	state=3;
 	}
 	else{
-	state=state+1;
+	state++1;
 	}
-	flag=flag+1;
+	flag++;
 }
 
 i=i+1;
